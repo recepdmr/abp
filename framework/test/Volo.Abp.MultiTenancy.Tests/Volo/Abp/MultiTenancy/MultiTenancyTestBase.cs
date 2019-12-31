@@ -1,4 +1,5 @@
-﻿using Volo.Abp.Testing;
+﻿using Volo.Abp.MultiTenancy.Tests;
+using Volo.Abp.Testing;
 
 namespace Volo.Abp.MultiTenancy
 {
