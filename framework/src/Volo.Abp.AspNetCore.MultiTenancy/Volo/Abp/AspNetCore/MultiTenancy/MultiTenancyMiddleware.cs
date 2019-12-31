@@ -3,6 +3,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Volo.Abp.DependencyInjection;
 using Volo.Abp.MultiTenancy;
+using Volo.Abp.MultiTenancy.Volo.Abp.MultiTenancy;
 
 namespace Volo.Abp.AspNetCore.MultiTenancy
 {
@@ -14,9 +15,9 @@ namespace Volo.Abp.AspNetCore.MultiTenancy
         private readonly ITenantResolveResultAccessor _tenantResolveResultAccessor;
 
         public MultiTenancyMiddleware(
-            ITenantResolver tenantResolver, 
-            ITenantStore tenantStore, 
-            ICurrentTenant currentTenant, 
+            ITenantResolver tenantResolver,
+            ITenantStore tenantStore,
+            ICurrentTenant currentTenant,
             ITenantResolveResultAccessor tenantResolveResultAccessor)
         {
             _tenantResolver = tenantResolver;
@@ -36,9 +37,8 @@ namespace Volo.Abp.AspNetCore.MultiTenancy
                 tenant = await FindTenantAsync(resolveResult.TenantIdOrName);
                 if (tenant == null)
                 {
-                    //TODO: A better exception?
-                    throw new AbpException(
-                        "There is no tenant with given tenant id or name: " + resolveResult.TenantIdOrName
+                    throw new AbpMultiTenantException(
+                        string.Format("There is no tenant with given tenant id or name: {0}", resolveResult.TenantIdOrName)
                     );
                 }
             }
