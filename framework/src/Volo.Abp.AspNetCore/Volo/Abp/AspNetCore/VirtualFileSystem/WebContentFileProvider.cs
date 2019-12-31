@@ -15,7 +15,7 @@ namespace Volo.Abp.AspNetCore.VirtualFileSystem
         private readonly IVirtualFileProvider _virtualFileProvider;
         private readonly IFileProvider _fileProvider;
         private readonly IWebHostEnvironment _hostingEnvironment;
-        private string _rootPath = "/wwwroot"; //TODO: How to handle wwwroot naming?
+        private readonly string _rootPath = "/wwwroot"; //TODO: How to handle wwwroot naming?
 
         protected AbpAspNetCoreContentOptions Options { get; }
 
