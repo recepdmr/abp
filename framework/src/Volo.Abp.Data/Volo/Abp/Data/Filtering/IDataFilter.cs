@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Volo.Abp.Data
+namespace Volo.Abp.Data.Filtering
 {
     public interface IDataFilter<TFilter>
         where TFilter : class
@@ -16,7 +16,7 @@ namespace Volo.Abp.Data
     {
         IDisposable Enable<TFilter>()
             where TFilter : class;
-        
+
         IDisposable Disable<TFilter>()
             where TFilter : class;
 

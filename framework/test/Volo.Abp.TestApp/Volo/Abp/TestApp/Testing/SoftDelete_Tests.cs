@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
 using Shouldly;
-using Volo.Abp.Data;
+using Volo.Abp.Data.Filtering;
 using Volo.Abp.Domain.Repositories;
 using Volo.Abp.Modularity;
 using Volo.Abp.TestApp.Domain;

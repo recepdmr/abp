@@ -14,6 +14,7 @@ using Microsoft.Extensions.Logging.Abstractions;
 using Newtonsoft.Json;
 using Volo.Abp.Auditing;
 using Volo.Abp.Data;
+using Volo.Abp.Data.Filtering;
 using Volo.Abp.DependencyInjection;
 using Volo.Abp.Domain.Entities;
 using Volo.Abp.Domain.Entities.Events;

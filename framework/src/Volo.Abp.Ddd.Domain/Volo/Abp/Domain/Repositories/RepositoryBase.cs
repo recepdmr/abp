@@ -5,7 +5,7 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Threading;
 using System.Threading.Tasks;
-using Volo.Abp.Data;
+using Volo.Abp.Data.Filtering;
 using Volo.Abp.Domain.Entities;
 using Volo.Abp.MultiTenancy;
 

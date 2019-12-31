@@ -6,9 +6,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
 using Volo.Abp.DependencyInjection;
 
-namespace Volo.Abp.Data
+namespace Volo.Abp.Data.Filtering
 {
-    //TODO: Create a Volo.Abp.Data.Filtering namespace?
     public class DataFilter : IDataFilter, ISingletonDependency
     {
         private readonly ConcurrentDictionary<Type, object> _filters;
