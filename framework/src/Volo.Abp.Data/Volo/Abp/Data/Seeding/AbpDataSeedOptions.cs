@@ -1,4 +1,4 @@
-﻿namespace Volo.Abp.Data
+﻿namespace Volo.Abp.Data.Seeding
 {
     public class AbpDataSeedOptions
     {

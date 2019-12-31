@@ -4,9 +4,8 @@ using Microsoft.Extensions.Options;
 using Volo.Abp.DependencyInjection;
 using Volo.Abp.Uow;
 
-namespace Volo.Abp.Data
+namespace Volo.Abp.Data.Seeding
 {
-    //TODO: Create a Volo.Abp.Data.Seeding namespace?
     public class DataSeeder : IDataSeeder, ITransientDependency
     {
         protected IHybridServiceScopeFactory ServiceScopeFactory { get; }
@@ -27,7 +26,7 @@ namespace Volo.Abp.Data
             {
                 foreach (var contributorType in Options.Contributors)
                 {
-                    var contributor = (IDataSeedContributor) scope
+                    var contributor = (IDataSeedContributor)scope
                         .ServiceProvider
                         .GetRequiredService(contributorType);
 

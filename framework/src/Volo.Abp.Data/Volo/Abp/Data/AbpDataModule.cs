@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using Microsoft.Extensions.DependencyInjection;
 using Volo.Abp.Data.Filtering;
+using Volo.Abp.Data.Seeding;
 using Volo.Abp.Modularity;
 using Volo.Abp.Uow;
 

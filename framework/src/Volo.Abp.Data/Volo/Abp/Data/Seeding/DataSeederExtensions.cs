@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
 
-namespace Volo.Abp.Data
+namespace Volo.Abp.Data.Seeding
 {
     public static class DataSeederExtensions
     {
